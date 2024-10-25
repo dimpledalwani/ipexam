@@ -1,0 +1,85 @@
+/* Quiz.css */
+
+body {
+  background-color: #71b9a1; /* Light red/pinkish background */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.quiz {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.question-section {
+  margin-bottom: 20px;
+}
+
+.question-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #8b0000; /* Dark red for text */
+}
+
+.answer-section {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.answer-option {
+  display: block;
+  margin: 8px 0;
+  font-size: 1.1rem;
+  color: #8b0000; /* Dark red for answers */
+}
+
+.answer-option input {
+  margin-right: 10px;
+}
+
+.submit-button {
+  background-color: #8b0000; /* Dark red button */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #6b0000; /* Darker red on hover */
+}
+
+.score-section {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #8b0000; /* Dark red for score text */
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .quiz {
+    width: 90%;
+  }
+
+  .submit-button {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
